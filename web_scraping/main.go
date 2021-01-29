@@ -25,9 +25,9 @@ func main() {
 	})
 
 	// Before making a request print "Visiting ..."
-	// c.OnRequest(func(r *colly.Request) {
-	// 	fmt.Println("Visiting", r.URL.String())
-	// })
+	 c.OnRequest(func(r *colly.Request) {
+	 	fmt.Println("Visiting", r.URL.String())
+	 })
 
 	// Start scraping on https://hackerspaces.org
 	c.Visit("https://ikman.lk/en/ad/suzuki-wagon-r-stingray-2015-for-sale-colombo-1416")
